@@ -1,0 +1,12 @@
+{
+	"name": "net.darksail.resettables",
+	"displayName": "Resettables",
+	"description": "Editor utility for resetting scriptable object state after changes made during editor play mode.",
+	"version": "0.1.0",
+	"unity": "2019.2",
+	"author": {
+		"name": "Dark Sail d.o.o.",
+		"email": "studio@darksail.net",
+		"url": "https://darksail.net"
+	}
+}
