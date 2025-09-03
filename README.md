@@ -1,0 +1,35 @@
+# Resettables
+
+Unity editor utility for resetting `ScriptableObject` state after changes made during editor play mode, mimicking scene object behavior.
+
+## Why is this useful?
+
+Unlike scene `MonoBehaviour` objects, `ScriptableObject` instances are assets which persist changes made during editor play mode. This makes them less useful as stateful runtime data containers such as entities, singleton managers, or shared variables.
+
+By aligning their behavior with scene objects, they can serve as stateful singletons shared across scenes and referenced through the inspector, simplifying cross-object communication.
+
+## Requirements
+
+- Unity 2019.2+
+
+## Install
+
+### Remote (2019.3+)
+
+1. In Unity Editor click **Window** → **Package Manager**.
+2. Click **+** (top left) → **Install package from git URL…**.
+3. Enter this repository URL with `.git` suffix and click **Add**:
+	```
+	https://github.com/darksailstudio/resettables.git
+	```
+
+### Local (2019.2+)
+
+1. Clone this repository.
+1. In Unity Editor click **Window** → **Package Manager**.
+2. Click **+** (top left) → **Install package from disk…**.
+3. Select `package.json` file in the cloned repository.
+
+## License
+
+[MIT](LICENSE.md)
