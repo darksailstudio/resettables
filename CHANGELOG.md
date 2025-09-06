@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.0.3] - 2025-09-06
+### Added
+- Added changelog.
+
 ## [1.0.2] - 2025-09-06
 ### Changed
 - Restructured test directories to match Unity package layout guidelines.
