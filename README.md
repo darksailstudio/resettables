@@ -30,6 +30,39 @@ By aligning their behavior with scene objects, they can serve as stateful single
 2. Click **+** (top left) → **Install package from disk…**.
 3. Select `package.json` file in the cloned repository.
 
+## Example
+
+Create a new `ScriptableObject` derived class and mark it with `ResetOnExitPlayMode` attribute:
+
+```cs
+using DarkSail.Resettables;
+using UnityEngine;
+
+[ResetOnExitPlayMode]
+[CreateAssetMenu(menuName = "My Project/My Entity")]
+class MyEntity : ScriptableObject
+{
+	public int Value;
+}
+```
+
+All derived classes will inherit the resetting behavior unless explicitly disabled:
+
+```cs
+using DarkSail.Resettables;
+using UnityEngine;
+
+[ResetOnExitPlayMode(Inherit = false)]
+class Resettable : ScriptableObject
+{
+	public int Value;
+}
+```
+
+```cs
+class NotResettable : Resettable { }
+```
+
 ## License
 
 [MIT](LICENSE.md)
