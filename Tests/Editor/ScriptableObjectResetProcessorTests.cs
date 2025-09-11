@@ -61,7 +61,6 @@ namespace DarkSail.Resettables.Editor.Tests
 
 			mock = AssetDatabase.LoadAssetAtPath<Mock>(AssetPath);
 			mock.Value = 200;
-			EditorUtility.SetDirty(mock);
 
 			yield return new ExitPlayMode();
 
@@ -151,7 +150,6 @@ namespace DarkSail.Resettables.Editor.Tests
 
 			mock = AssetDatabase.LoadAssetAtPath<Mock>(AssetPath);
 			mock.Value = 200;
-			EditorUtility.SetDirty(mock);
 			AssetDatabase.DeleteAsset(AssetPath);
 
 			yield return new ExitPlayMode();

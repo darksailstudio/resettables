@@ -163,7 +163,7 @@ namespace DarkSail.Resettables.Editor
 			{
 				Recreate(metadata.Path, metadata.Type, serializedInstance);
 			}
-			else if (EditorUtility.IsDirty(instance))
+			else
 			{
 				Reset(instance, serializedInstance);
 			}
