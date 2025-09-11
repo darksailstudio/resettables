@@ -16,19 +16,19 @@ By aligning their behavior with scene objects, they can serve as stateful single
 
 ### Remote (2019.3+)
 
-1. In Unity Editor click **Window** → **Package Manager**.
+1. In the Unity Editor, click **Window** → **Package Manager**.
 2. Click **+** (top left) → **Install package from git URL…**.
-3. Enter this repository URL with `.git` suffix and click **Add**:
+3. Enter this repository URL with the `.git` suffix:
 	```
 	https://github.com/darksailstudio/resettables.git
 	```
 
 ### Local (2019.2+)
 
-1. Clone this repository.
-1. In Unity Editor click **Window** → **Package Manager**.
-2. Click **+** (top left) → **Install package from disk…**.
-3. Select `package.json` file in the cloned repository.
+1. Download the [latest release](https://github.com/darksailstudio/resettables/releases/latest), or clone this repository.
+2. In the Unity Editor, click **Window** → **Package Manager**.
+3. Click **+** (top left) → **Install package from disk…**.
+4. Select the `package.json` file.
 
 ## Example
 
